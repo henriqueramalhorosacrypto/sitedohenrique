@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Botão</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .btn-vermelho {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .btn-vermelho:hover {
+      background-color: #c0392b;
+    }
+
+    .btn-vermelho:active {
+      transform: scale(0.95);
+    }
+
+    #mensagem {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn-vermelho" onclick="mostrarMensagem()">Clique Aqui</button>
+  <p id="mensagem"></p>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').innerText = 'click';
+    }
+  </script>
+
+</body>
+</html>
